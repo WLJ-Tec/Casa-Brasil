@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Brasil - Imobiliária & Construtora | Realize o Sonho da Casa Própria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="bg-white shadow-md py-4">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="images/logo-casa-brasil.jpg" alt="Casa Brasil Logo" class="h-12 mr-3">
+                <span class="text-2xl font-bold text-gray-800">Casa Brasil</span>
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#hero" class="text-gray-600 hover:text-green-600 font-semibold">Início</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-green-600 font-semibold">Sobre</a></li>
+                <li><a href="#services" class="text-gray-600 hover:text-green-600 font-semibold">Serviços</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-green-600 font-semibold">Projetos</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-green-600 font-semibold">Contato</a></li>
+            </ul>
+            <button class="hidden md:block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300">Solicitar Orçamento</button>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <ul class="flex flex-col items-center py-4 space-y-2">
+                <li><a href="#hero" class="text-gray-600 hover:text-green-600 font-semibold">Início</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-green-600 font-semibold">Sobre</a></li>
+                <li><a href="#services" class="text-gray-600 hover:text-green-600 font-semibold">Serviços</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-green-600 font-semibold">Projetos</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-green-600 font-semibold">Contato</a></li>
+                <li><button class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300 w-full">Solicitar Orçamento</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="relative bg-yellow-400 text-gray-800 py-20 px-4 flex items-center justify-center min-h-screen">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-5xl font-extrabold leading-tight mb-4">Realize o Sonho da Casa Própria</h1>
+                    <p class="text-lg mb-8">Especialistas em financiamento imobiliário, construção e projetos personalizados. Transformamos seus sonhos em realidade com qualidade e confiança.</p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <button class="bg-green-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-700 transition duration-300">Ver Projetos</button>
+                        <button class="bg-white text-green-600 border border-green-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-50 transition duration-300">Simular Financiamento</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="images/81kQrKMsuXmJ.jpg" alt="Casa Moderna" class="rounded-lg shadow-lg max-w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-white py-20 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Quem Somos</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">A Casa Brasil é uma empresa consolidada no mercado imobiliário, oferecendo soluções completas em financiamento, construção e consultoria imobiliária. Nossa missão é tornar o sonho da casa própria uma realidade acessível para todas as famílias.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 shadow-lg rounded-lg bg-gray-50">
+                        <i class="fas fa-briefcase text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Experiência</h3>
+                        <p class="text-gray-600">Anos de tradição no mercado imobiliário e de construção civil.</p>
+                    </div>
+                    <div class="p-6 shadow-lg rounded-lg bg-gray-50">
+                        <i class="fas fa-hand-holding-usd text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Financiamento</h3>
+                        <p class="text-gray-600">Facilitamos o acesso ao crédito imobiliário com as melhores condições.</p>
+                    </div>
+                    <div class="p-6 shadow-lg rounded-lg bg-gray-50">
+                        <i class="fas fa-award text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Qualidade</h3>
+                        <p class="text-gray-600">Projetos personalizados com materiais de primeira qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="bg-gray-100 py-20 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Nossos Serviços</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">Soluções completas para realizar seu projeto imobiliário</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 shadow-lg rounded-lg bg-white">
+                        <i class="fas fa-file-invoice-dollar text-5xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Financiamento Imobiliário</h3>
+                        <p class="text-gray-600 mb-4">Use seu FGTS, acesse o programa Minha Casa Minha Vida e tenha aprovação facilitada de crédito.</p>
+                        <ul class="text-left text-gray-600 list-disc list-inside">
+                            <li>Documentação gratuita</li>
+                            <li>Aprovação em até 48h</li>
+                            <li>Melhores taxas do mercado</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 shadow-lg rounded-lg bg-white">
+                        <i class="fas fa-hard-hat text-5xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Construção Personalizada</h3>
+                        <p class="text-gray-600 mb-4">Projetos sob medida com acompanhamento de engenharia e arquitetura especializada.</p>
+                        <ul class="text-left text-gray-600 list-disc list-inside">
+                            <li>Projeto de engenharia incluso</li>
+                            <li>Materiais de primeira qualidade</li>
+                            <li>Prazo de entrega garantido</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 shadow-lg rounded-lg bg-white">
+                        <i class="fas fa-chart-line text-5xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Consultoria Imobiliária</h3>
+                        <p class="text-gray-600 mb-4">Compra, venda e investimentos imobiliários com assessoria completa e personalizada.</p>
+                        <ul class="text-left text-gray-600 list-disc list-inside">
+                            <li>Avaliação gratuita do imóvel</li>
+                            <li>Assessoria jurídica inclusa</li>
+                            <li>Acompanhamento completo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="why-us" class="bg-gray-100 py-20 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Por que Escolher a Casa Brasil?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="p-6 shadow-lg rounded-lg bg-white">
+                        <i class="fas fa-chart-line text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Experiência no Mercado</h3>
+                        <p class="text-gray-600">Anos de tradição e confiança no setor imobiliário</p>
+                    </div>
+                    <div class="p-6 shadow-lg rounded-lg bg-white">
+                        <i class="fas fa-money-bill-wave text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Facilidade no Financiamento</h3>
+                        <p class="text-gray-600">Aprovação rápida e condições especiais</p>
+                    </div>
+                    <div class="p-6 shadow-lg rounded-lg bg-white">
+                        <i class="fas fa-drafting-compass text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Projetos Personalizados</h3>
+                        <p class="text-gray-600">Cada casa é única e feita sob medida</p>
+                    </div>
+                    <div class="p-6 shadow-lg rounded-lg bg-white">
+                        <i class="fas fa-file-alt text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Documentação Gratuita</h3>
+                        <p class="text-gray-600">Sem custos adicionais para aprovação</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white py-20 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Entre em Contato</h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12">Estamos prontos para realizar seu sonho. Fale conosco!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left py-8 px-4">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-xl font-semibold mb-2">Contato</h3>
+            <p class="flex items-center justify-center md:justify-start mb-1">
+              <i class="fas fa-phone-alt text-yellow-400 mr-2"></i> (85) 3000-0000
+            </p>
+            <p class="flex items-center justify-center md:justify-start mb-1">
+              <i class="fas fa-envelope text-yellow-400 mr-2"></i> contato@casabrasilbr.com.br
+            </p>
+            <p class="flex items-center justify-center md:justify-start">
+              <i class="fas fa-map-marker-alt text-yellow-400 mr-2"></i> Rua das Construções, 123, Centro - Fortaleza - CE
+            </p>
+          </div>
+          <div class="mb-4 md:mb-0">
+            <img src="images/logo-casa-brasil.jpg" alt="Casa Brasil Logo" class="h-20 mx-auto md:mx-0">
+          </div>
+        </div>
+      
+        <!-- copyright isolado -->
+        <div class="wlj">
+          <span>[2025] WLJ Tecnologia © Todos os direitos reservados.</span>
+        </div>
+      </footer>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
+
